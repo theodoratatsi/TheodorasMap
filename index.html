@@ -39,6 +39,10 @@
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
+	  
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
 
   /* Trinity College */
   L.marker([41.74808126463377, -72.69042274747898]).addTo(map) // EDIT marker coordinates
